@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    padding: 20px; 
+    height: 100vh;
+    overflow: hidden;
+
+  background-image: url('./img/background.jpg'); /* cesta k tvému obrázku */
+  background-size: cover;              /* roztáhne obrázek na celou obrazovku */
+  background-position: center center;  /* vystředí obrázek */
+  background-repeat: no-repeat;        /* zabrání opakování */
+}
+button{
+  padding: 10px 30px;
+  background-color: #0E3A2F;
+  color: #78FAAE;
+  border: 2px solid #78FAAE;
+  border-radius: 999px; /* silně zaoblené rohy */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#quiz-container { display: none; }
+    .question-block {
+        display: inline-block;
+        width:48%;
+        margin-top: 20px;
+        position: relative;
+    }
+    .imageBox {
+        display:inline-block;
+    }
+    .optionsBox{
+        display:block;
+        border:1px solid black;
+        padding: 5px;
+    }
+svg{
+    position: absolute;
+    left:0;
+    top:0;
+}
+    .question { margin-bottom: 10px; }
+    .hidden { display: none; }
+    .btn { padding: 10px 20px; margin: 5px; cursor: pointer; }
+    .drag-block{      
+        width: 200px;
+        height: 40px;
+        user-select: none;
+        border: 2px solid rgb(120, 250, 174);
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        vertical-align: middle;
+        border-top: 20px;
+        padding-top: 20px;
+        background-color: #0E3A2F;
+        border-radius: 25px;
+        margin: 5px;
+    }
+    .drop-zone {
+      width: 300px;
+      height: 70px;
+      user-select: none;
+      border: 2px dashed #aaa;
+      display: inline-block;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      vertical-align: top;
+    }
+    .puzzle{
+        width: 115px;
+        height: 60px;        
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 260 120'><rect x='0' y='0' width='200' height='120' fill='%2378FAAE'/><path d='M0,30 A10,10 0 1,1 0,90' fill='%230E3A2F'/><path d='M200,30 A10,10 0 1,1 200,90' fill='%2378FAAE'/> stroke='red' fill='%2378FAAE'/></svg>");
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 0px solid #999;
+        box-sizing: border-box;
+        vertical-align: middle;
+        text-align: center;
+        line-height:100%;
+        display: table-cell;
+        color: #0E3A2F;
+    }
+
+    #timer { font-weight: bold; margin-bottom: 10px; }
